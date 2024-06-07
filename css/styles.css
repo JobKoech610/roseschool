@@ -1,0 +1,1697 @@
+@import url(/css/reset-fonts-grids.css);
+
+/* YUI 2.5.2
+(px)    (%)
+10      77
+11      85
+12      93 (was 92)
+13      100
+14      108 (was 107)
+15      116 (was 114)
+16      123.1 (was 122)
+17      131 (was 129)
+18      138.5 (was 136)
+19      146.5 (was 144)
+20      153.9 (was 152)
+21      161.6 (was 159)
+22      167
+23      174
+24      182
+25      189
+26      197
+*/
+
+/**
+ * ui theme:
+ * http://jqueryui.com/themeroller/#ffDefault=Verdana%2CArial%2Csans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=5px&bgColorHeader=ffffff&bgTextureHeader=12_gloss_wave.png&bgImgOpacityHeader=75&borderColorHeader=ffffff&fcHeader=eaf5f7&iconColorHeader=d8e7f3&bgColorContent=fcfdfd&bgTextureContent=06_inset_hard.png&bgImgOpacityContent=100&borderColorContent=b5b5b5&fcContent=222222&iconColorContent=0078ae&bgColorDefault=eaeef1&bgTextureDefault=01_flat.png&bgImgOpacityDefault=45&borderColorDefault=b5b5b5&fcDefault=3d3d3d&iconColorDefault=3d3d3d&bgColorHover=d2d8e6&bgTextureHover=03_highlight_soft.png&bgImgOpacityHover=30&borderColorHover=697791&fcHover=263248&iconColorHover=263248&bgColorActive=6f89ac&bgTextureActive=03_highlight_soft.png&bgImgOpacityActive=30&borderColorActive=263248&fcActive=ffffff&iconColorActive=ffffff&bgColorHighlight=f8da4e&bgTextureHighlight=02_glass.png&bgImgOpacityHighlight=55&borderColorHighlight=fcd113&fcHighlight=915608&iconColorHighlight=f7a50d&bgColorError=e14f1c&bgTextureError=12_gloss_wave.png&bgImgOpacityError=45&borderColorError=cd0a0a&fcError=ffffff&iconColorError=fcd113&bgColorOverlay=aaaaaa&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=75&opacityOverlay=30&bgColorShadow=999999&bgTextureShadow=01_flat.png&bgImgOpacityShadow=55&opacityShadow=45&thicknessShadow=0px&offsetTopShadow=5px&offsetLeftShadow=5px&cornerRadiusShadow=5px
+ */
+
+/**
+ * Various
+ */
+.hidden {
+  display: none; 
+}
+.clearfix {
+  zoom: 1
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html {
+  background: url(/web/20190620032539im_/http://www.roseschool.it/img/bgr.png);
+}
+body {
+  line-height: 1.4;
+  color: #434344;  
+}
+
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+a {
+  color: #0063A5;
+}
+a:hover {
+  color: #6D2019;
+  text-decoration: none;
+}
+
+label .required,
+label.required:after {
+  color: red;
+  margin-left: 2px;
+  content: '*';
+}
+label.inline {
+  display: inline !important;
+}
+
+ol li {
+  list-style: decimal;
+}
+
+
+
+/**
+ * Layout
+ */
+#custom-doc {
+  width: 801px;
+  margin: auto;
+  text-align: left;
+  background: #FFFFFF;
+  border-right: 4px solid #FFFFFF;  
+  border-left: 4px solid #FFFFFF;
+} 
+#sidebar-left {
+  width: 25%;
+  text-align: center;
+  padding-top: 1em;
+}
+#main{
+  margin: 0;
+  width: 75%;
+  min-height: 30em;    
+}
+
+/* Ammazza il 'bianchiccio' in fondo alla pagina */
+#hd:after,#bd:after,#ft:after,.yui-g:after,.yui-gb:after,.yui-gc:after,.yui-gd:after,.yui-ge:after,.yui-gf:after{font-size:0;}
+
+
+/**
+ * Header
+ */
+#hd {
+  height: 293px;
+  position: relative;
+}
+
+/* @see ie.css */
+#siteNavigation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 93%;
+  background-color: #263248;
+}
+#siteNavigation .sf-menu {
+  width: 100%;
+  margin-bottom: 0;
+}
+#siteNavigation li {
+  background-color: #263248;
+  font-size: 12px;
+}
+#siteNavigation a:focus,
+#siteNavigation a:hover,
+#siteNavigation a:active {
+  background: #3D5173;
+}
+#siteNavigation li ul {
+  min-width: 100%;
+  width: auto;
+}
+#siteNavigation li ul li {
+  background: #263248;
+  white-space: nowrap;
+}
+#siteNavigation li ul li:hover,
+#siteNavigation li ul li.sfHover,
+#siteNavigation li ul li a:focus,
+#siteNavigation li ul li a:hover,
+#siteNavigation li ul li a:active {
+  background: #3D5173;
+}
+#siteNavigation li a {
+  color: #FFFFFF;
+  border-top: 0;  
+  border-left: 0;
+  border-right: 1px solid #FFFFFF;
+  height: 13px;
+  line-height: 14px;  
+  padding: 8px 7px;
+}
+#siteNavigation li ul li a {
+  border-bottom: 1px solid #4F596B;
+  border-right: 0;
+}
+#siteNavigation li a.sf-with-ul {
+  padding-right: 20px;
+}
+#siteNavigation .sf-sub-indicator {
+  right: 0.5em;
+  background-position: -10px -98px;
+}
+#siteNavigation a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	background-position: 0 -98px; /* use translucent arrow for modern browsers*/
+}
+/* apply hovers to modern browsers */
+#siteNavigation a:focus > .sf-sub-indicator,
+#siteNavigation a:hover > .sf-sub-indicator,
+#siteNavigation a:active > .sf-sub-indicator,
+#siteNavigation li:hover > a > .sf-sub-indicator,
+#siteNavigation li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px -98px; /* arrow hovers for modern browsers*/
+}
+#siteNavigation li#sf-RoseMail {
+  float: right;
+}
+#siteNavigation li#sf-RoseMail a {
+  float: right;
+  padding-right: 10px;
+  border-right: 0;  
+}
+
+
+#hd #logo{
+  width: 597px;
+  height: 260px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#hd .sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 260px;
+}
+
+#UserBlock {
+  background-color: #E8E8E8;
+  margin-bottom: 5px;
+  height: 125px;
+  padding: 10px;
+  line-height: 1em;
+  position: relative;
+  width: 180px;
+  overflow: hidden;
+}
+#UserBlock p {
+  margin-bottom: 0.5em;
+}
+#UserBlock .errors strong {
+  color: red;
+}
+#UserBlock .errors ul {
+  margin: 0.5em 0;
+  padding-left: 1em;
+}
+#UserBlock .errors ul li {
+  list-style-type: square;
+  margin: 0.2em; 
+}
+#UserBlock label {
+  display: block;
+  font-weight: bold;
+  font-size: 85%;
+}
+#UserBlock input[type=text],
+#UserBlock input[type=password] {
+  padding: 0.2em;
+  color: #666666;
+  font-size: 93%;  
+  letter-spacing: 1px;
+  border: 1px solid #999999;
+  background: #FCFCFC;
+  width: 96%;
+}
+#UserBlock ul.form-elements li.form-element {
+  margin-bottom: 0.3em;
+  float: left;
+  width: 100%;  
+}
+#UserBlock ul.form-elements #password-element {
+  width: 72%;
+}
+#UserBlock .nav {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  bottom: 15px;
+  text-align: center;
+}
+#UserBlock .nav li {
+  display: inline;
+  margin: 0 0.2em;
+}
+#UserBlock .nav li a {
+  font-size: 85%;
+  padding: 0.2em 0.4em;
+  text-decoration: none;
+}
+#UserBlock .nav li a:hover {
+  color: #263248;
+}
+#UserBlock #actions-buttonset {
+  border: 0;
+  background: 0;
+  position: absolute;
+  right: 10px;
+  top: 4.7em;
+}
+#UserBlock #actions-buttonset input {
+  cursor: pointer;
+  padding: 0.2em;
+  font-size: 85%;
+  color: #333333;
+}
+
+
+/**
+ * FlashWrapper
+ */
+#flashWrapper {
+  display: none;
+  width: 400px;  
+  margin-left: -200px;  
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  position: fixed;
+  z-index: 50000;  
+}
+#flash {
+  padding: 1em;
+}
+#flashWrapper span {
+  float: left; 
+  margin-right: 0.3em;
+}
+
+
+/**
+ * Sidebar blocks
+ */
+#sidebar-left .block {
+  margin: 1em 0;
+  text-align: left;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #6A0000;  
+}
+#sidebar-left .block h3 {
+  background: #6A0000;
+  color: #FFFFFF;
+  padding: 0.2em 0.5em;
+  font-weight: bold;
+}
+#sidebar-left .block ul {
+  margin: 0 0.5em;
+}
+#sidebar-left .block li {
+  margin: 0.5em 0;
+}
+#sidebar-left .block li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+#sidebar-left .block .content {
+  margin: 0.5em;
+}
+
+
+/**
+ * Page
+ */
+#main .page {
+  padding: 1em;
+} 
+#main .page h1 {
+  color: #0063A5;
+  font-size: 108%;
+  font-weight: bold;
+  margin-bottom: 1.4em;
+}
+#main .page h2 {
+  color: #0063A5;
+  font-size: 100%;
+  font-weight: bold;
+  margin-bottom: 1.4em;
+}
+#main .page h1.title {
+  margin-bottom: 1.4em;
+}
+#main .page p {
+  margin-bottom: 1.4em;
+} 
+#main .page .text {
+  margin-bottom: 1.4em;
+  line-height: 1.6em;
+} 
+#main .page .form {
+} 
+#main .page .text ul {
+  margin: 1.4em 0;
+}
+#main .page .text li {
+  padding-left: 0;
+  margin: 0.3em 0;
+  margin-left: 1.3em;
+  line-height: 1.4em;
+  list-style: disc;
+}
+#main .page .text h3 {
+  font-weight: bold;
+  color: #6A0000;
+}
+#main .page .text table {
+  margin-bottom: 1.4em;
+}
+#main .page .text table td, 
+#main .page .text table th {
+  padding: 0.5em;
+  background-color: #e6e6e6;
+}
+#main .page .text table th {
+  font-weight: bold;
+}
+#main .page .ui-tabs {
+  border: 0;
+} 
+#main .page ul.ui-tabs-nav {
+  margin: 0 0 1em 0;
+  background: none;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #263248;
+  -moz-border-radius-bottomleft: 0;
+}
+#main .page ul.ui-tabs-nav li {
+  font-size: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+#main .page .ui-tabs-panel {
+  padding: 0;
+}
+
+
+/**
+ * Teasers
+ */
+#main .teaser {
+  border-bottom: 1px solid #CCCCCC;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+#main .teaser h2 {
+  margin-bottom: 0.5em;
+}
+#main .teaser h2 a {
+  text-decoration: none;
+}
+
+#homepage .teaser {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 48%;
+  float: left;
+  height: 15em;
+}
+#homepage .teaser:nth-child(even) {
+  float: right;
+}
+
+
+/**
+ * Dashboard
+ */
+#main #dashboard li.box {
+  background: none;
+  width: 100%;
+  margin: 2em 0;
+  position: relative;
+}
+#main #dashboard li.box h3 {
+  color: #6A0000;
+}
+#main #dashboard li.box p {
+  margin-bottom: 1em;
+}
+#main #dashboard li.box a {
+  text-decoration: none;
+  padding: 0.3em 0.6em;
+}
+#main #dashboard li.box .content input,
+#main #dashboard li.box .content a {
+  padding: 0.2em;
+  font-size: 85%;
+}
+#main #dashboard li.box .actions {
+  text-align: center;
+  padding: 1em 0;  
+}
+#main #dashboard li.box .actions span.disabled {
+  border: 1px solid #CDC3B7;  
+  text-decoration: none;
+  padding: 0.3em 0.6em;
+}
+#main #dashboard li.box .content table {
+  width: 100%;
+  margin: 0.5em 0 1em 0;
+}
+#main #dashboard li.box .content table tr:hover td {
+  background-color: #F0F0F0; 
+}
+#main #dashboard li.box .content table td {
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 0.2em;
+}
+#main #dashboard li.box .content table td.select {
+  padding-left: 5px;
+}
+#main #dashboard li.box .content table td label {
+  display: inline;
+  padding-left: 5px;
+  font-weight: normal;
+  font-size: 100%;
+}
+#main #dashboard li.box .content table td .helpIco {
+  margin-left: 5px;
+  cursor: pointer;
+}
+#main #dashboard li.box .content table td.cmds {
+  width: 52px;
+}
+#main #dashboard li.box .content table td a {
+  float: left;
+  font-size: 12px;
+  margin: 0 2px;
+  padding: 2px;
+  width: 16px;  
+}
+#main #dashboard .content ul.hints {
+  padding: 0.2em 0.5em;
+  background: #6f89ac;
+  margin-bottom: 1em;
+  border: 0;
+}
+#main #dashboard .content ul.hints li {
+  margin: 0.5em 0;
+  font-size: 93%;
+}
+#main #dashboard .content ul.hints li input,
+#main #dashboard .content ul.hints li a {
+  border-color: #263248;
+  color: #263248;
+}
+
+#main #dashboard #careerSelect {
+  width: 100%;
+}
+
+
+
+/**
+ * Page forms
+ */
+#main .page #column_left-fieldset {
+  float: left;
+  width: 47%;
+}
+#main .page #column_right-fieldset {
+  float: right;
+  width: 47%;
+} 
+#main .page ul.form-elements {
+  margin: 0;
+}
+#main .page ul.form-elements li {
+  line-height: 1.4em;
+}
+#main .page ul.form-elements li.form-element {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #CCCCCC;
+}
+#main .page ul.form-elements li.form-element p.description {
+  font-size: 85%;
+  color: #666666;
+  margin: 0.2em 0 0 0;
+  line-height: 1.2em;
+}
+#main .page .form-fieldset .floated li.form-element {
+  float: left;
+  margin-right: 1em;
+}
+#main .page .form-fieldset .floated li.form-element input,
+#main .page .form-fieldset .floated li.form-element textarea,
+#main .page .form-fieldset .floated li.form-element select {
+  width: auto;
+}
+#main .page label {
+  display: block;
+  font-weight: bold;
+  font-size: 108%;
+  white-space: nowrap;
+}
+#main .page span.label {
+  font-weight: bold;
+}
+#main .page input[type=text],
+#main .page input[type=password],
+#main .page textarea,
+#main .page select {
+  padding: 0.4em;
+  color: #666666;
+  letter-spacing: 1px;
+  border: 1px solid #999999;
+  background: #FCFCFC;
+}
+#main .page input[type=file] {
+  margin-bottom: 0.3em;
+}
+#main .page select {
+  padding: 0.32em 0.4em;
+}
+#main .page input[type=text]:focus,
+#main .page input[type=password]:focus,
+#main .page select:focus,
+#main .page textarea:focus {
+  border: 1px solid #FF6600;
+  background: #FFFFFF;
+  color: #FF6600;
+}
+#main .page input[type=text]:disabled,
+#main .page input[type=password]:disabled,
+#main .page select:disabled,
+#main .page textarea:disabled {
+  border: 1px solid #CCCCCC;
+  color: #AAAAAA;
+}
+#main .page ul.errors {
+  margin-top: 0.5em;
+  background: #FFEEEE;
+  border: 1px dotted #CCAAAA;
+  border-left: 3px solid #CCAAAA;
+}
+#main .page ul.errors li {
+  color: red;
+  margin: 0.2em 0;
+  padding: 0 0.3em;
+}
+
+#main .page .actions-buttonset,
+#main .page #actions-buttonset {
+  clear: both;
+  border: 0;
+  background: #515153;
+  text-align: center;
+  padding: 0.5em 0;
+}
+#main .page ul.form-elements .actions-buttonset li.form-element,
+#main .page ul.form-elements #actions-buttonset li.form-element {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: inline;
+}
+#main .page .actions-buttonset input,
+#main .page .actions-buttonset button,
+#main .page .actions-buttonset a,
+#main .page #actions-buttonset input,
+#main .page #actions-buttonset button,
+#main .page #actions-buttonset a {
+  cursor: pointer;
+  padding: 0.2em;
+  font-size: 116%;
+  color: #333333;
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+#main .page .actions-buttonset a,
+#main .page #actions-buttonset a {
+  padding: 0.3em;
+}
+
+#studyPaths-info-1,
+#studyPaths-info-2 {
+  display: none;
+}
+
+
+#studyPaths-info table {
+  text-align: center;
+}
+
+
+
+/**
+ * Profile pages
+ */
+ 
+#profileEdit p.hint {
+  float: right;
+}
+
+.modulesHint li {
+  list-style-type: circle;
+  margin-left: 2em;
+}
+
+.modulesHint {
+  margin: 0.2em;
+  padding: 0.5em;
+  border: 1px solid #CCCCCC;
+  background: #F2F2F2;
+  font-size: 85%;
+  
+}
+
+#compulsoryHint-element .required,
+#profileEdit p.hint .required {
+  color: red;
+}
+ 
+#main .page ul.item-list {
+  margin: 0 0 1em 0;
+}
+#main .page ul.item-list li {
+  background: none;
+  margin: 0;
+  padding: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
+  line-height: 2em;
+  list-style: none outside;
+}
+#main .page ul.item-list li:hover {
+  background: #F0F0F0;
+}
+#main .page ul.item-list li form {
+  float: right;
+}
+#main .page ul.item-list li input {
+  cursor: pointer;
+  padding: 0.2em;
+  color: #333333;
+  font-size: 85%;
+}
+#main .page ul.item-list dl {
+  margin-left: 1em;
+}
+#main .page ul.item-list dt {
+  float: left;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+#main .page ul.item-list dd {
+  margin-right: 1em;
+}
+
+/* same as .clearfix */
+ul.item-list dd {
+  zoom: 1
+}
+ul.item-list dd:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/**
+ * PeopleForm
+ */
+#main .page .PeopleForm .form-fieldset {
+  width: 47%;
+}
+#main .page .PeopleForm .form-fieldset input[type=text],
+#main .page .PeopleForm .form-fieldset input[type=password] {
+  width: 96%;
+}
+#main .page .PeopleForm .form-fieldset textarea {
+  width: 96%;
+}
+#main .page .PeopleForm #salutation-element {
+  float: left;
+  width: 20%;
+}
+#main .page .PeopleForm #salutation-element input {
+  width: 80%;
+}
+#main .page .PeopleForm #name-element {
+  float: right;
+  width: 77%;
+}
+#main .page .PeopleForm #name-element input {
+  width: 95%;
+}
+#main .page .PeopleForm #surname-element {
+  clear: both;
+}
+#main .page .PeopleForm #sex-element {
+  float: left;
+  margin-right: 0.5em;
+  width: 28%;
+}
+#main .page .PeopleForm #sex-element select {
+  width: 100%;
+}
+#main .page .PeopleForm #maritalStatus-element {
+  float: left;
+  width: 35%;
+}
+#main .page .PeopleForm #maritalStatus-element select {
+  width: 100%;
+}
+#main .page .PeopleForm #cob-element select {
+  width: 100%;
+}
+#main .page .PeopleForm #dob-element {
+  width: 32%;
+  float: right;
+}
+#main .page .PeopleForm #dob-element input {
+  width: 88%;
+}
+#main .page .PeopleForm #productId-element select {
+  width: 100%;
+}
+#main .page .PeopleForm #avatar-fieldset {
+  clear: both;
+  width: 100%;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #CCCCCC;  
+}
+#main .page .PeopleForm #avatar-fieldset li {
+  float: left;
+  border: 0;
+  margin: 0 1em 0 0;
+  padding: 0;
+}
+
+
+/**
+ * PersonEducationsForm
+ */
+#main .page .PersonEducationsForm #degreeType-element {
+  float: left;
+  width: 15%;
+  margin-right: 1em;
+}
+#main .page .PersonEducationsForm #degreeType-element input {
+  width: 89%;
+}
+#main .page .PersonEducationsForm #degreeTitle-element {
+  float: left;
+  width: 45%;
+  margin-right: 1em;
+}
+#main .page .PersonEducationsForm #degreeTitle-element input {
+  width: 96%;
+}
+#main .page .PersonEducationsForm #finalGrade-element {
+  float: left;
+  width: 18%;
+}
+#main .page .PersonEducationsForm #finalGrade-element input {
+  width: 90%;
+}
+#main .page .PersonEducationsForm #awardedOn-element {
+  float: right;
+  width: 15%;
+}
+#main .page .PersonEducationsForm #awardedOn-element input {
+  width: 88%;
+}
+#main .page .PersonEducationsForm #institution-element {
+  clear: both;
+  float: left;
+  width: 66%;
+  margin-right: 1em;
+}
+#main .page .PersonEducationsForm #institution-element input {
+  width: 97%;
+}
+#main .page .PersonEducationsForm #beginsOn-element {
+  float: left;
+  width: 15%;
+}
+#main .page .PersonEducationsForm #beginsOn-element input {
+  width: 88%;
+}
+#main .page .PersonEducationsForm #endsOn-element {
+  float: right;
+  width: 15%;
+}
+#main .page .PersonEducationsForm #endsOn-element input {
+  width: 88%;
+}
+
+
+/**
+ * PersonQualificationsForm
+ */
+#main .page .PersonQualificationsForm #body-element {
+  float: left;
+  width: 29%;
+  margin-right: 1em;
+}
+#main .page .PersonQualificationsForm #body-element input {
+  width: 94%;
+}
+#main .page .PersonQualificationsForm #membership-element {
+  float: left;
+  width: 29%;
+  margin-right: 1em;
+}
+#main .page .PersonQualificationsForm #membership-element input {
+  width: 94%;
+}
+#main .page .PersonQualificationsForm #beginsOn-element {
+  float: left;
+  width: 17%;
+  margin-right: 1em;
+}
+#main .page .PersonQualificationsForm #beginsOn-element input {
+  width: 89%;
+}
+#main .page .PersonQualificationsForm #endsOn-element {
+  float: right;
+  width: 17%;
+}
+#main .page .PersonQualificationsForm #endsOn-element input {
+  width: 89%;
+}
+
+
+/**
+ * PersonLanguagesForm
+ */
+#main .page .PersonLanguagesForm #languageId-element {
+  float: left;
+  width: 21%;
+  margin-right: 1em;
+}
+#main .page .PersonLanguagesForm #languageId-element select {
+  width: 100%;
+}
+#main .page .PersonLanguagesForm #proficiency-element {
+  float: left;
+  width: 15%;
+  margin-right: 1em;
+}
+#main .page .PersonLanguagesForm #proficiency-element input {
+  width: 89%;
+}
+#main .page .PersonLanguagesForm #testName-element {
+  float: left;
+  width: 25%;
+  margin-right: 1em;
+}
+#main .page .PersonLanguagesForm #testName-element input {
+  width: 93%;
+}
+#main .page .PersonLanguagesForm #testScore-element {
+  float: left;
+  width: 15%;
+}
+#main .page .PersonLanguagesForm #testScore-element input {
+  width: 89%;
+}
+#main .page .PersonLanguagesForm #testedOn-element {
+  float: right;
+  width: 15%;
+}
+#main .page .PersonLanguagesForm #testedOn-element input {
+  width: 89%;
+}
+
+
+/**
+ * PersonExperiencesForm
+ */
+#main .page .PersonExperiencesForm #employer-element {
+  float: left;
+  width: 49%;
+}
+#main .page .PersonExperiencesForm #employer-element input {
+  width: 96%;
+}
+#main .page .PersonExperiencesForm #location-element {
+  float: right;
+  width: 49%;
+}
+#main .page .PersonExperiencesForm #location-element input {
+  width: 96%;
+}
+#main .page .PersonExperiencesForm #qualification-element {
+  clear: both;
+  float: left;
+  width: 65%;
+  margin-right: 1em;
+}
+#main .page .PersonExperiencesForm #qualification-element input {
+  width: 97%;
+}
+#main .page .PersonExperiencesForm #beginsOn-element {
+  float: left;
+  width: 15%;
+  margin-right: 1em;
+}
+#main .page .PersonExperiencesForm #beginsOn-element input {
+  width: 89%;
+}
+#main .page .PersonExperiencesForm #endsOn-element {
+  float: right;
+  width: 15%;
+}
+#main .page .PersonExperiencesForm #endsOn-element input {
+  width: 89%;
+}
+#main .page .PersonExperiencesForm #duties-element {
+  clear: both;
+}
+#main .page .PersonExperiencesForm #duties-element textarea {
+  width: 98%;
+}
+
+
+/**
+ * PersonRefereesForm
+ */
+#main .page .PersonRefereesForm #name-element {
+  float: left;
+  width: 49%;
+}
+#main .page .PersonRefereesForm #name-element input {
+  width: 96%;
+}
+#main .page .PersonRefereesForm #surname-element {
+  float: right;
+  width: 49%;
+}
+#main .page .PersonRefereesForm #surname-element input {
+  width: 96%;
+}
+#main .page .PersonRefereesForm #position-element {
+  clear: both;
+  float: left;
+  width: 49%;
+}
+#main .page .PersonRefereesForm #position-element input {
+  width: 96%;
+}
+#main .page .PersonRefereesForm #institution-element {
+  float: right;
+  width: 49%;
+}
+#main .page .PersonRefereesForm #institution-element input {
+  width: 96%;
+}
+#main .page .PersonRefereesForm #address-element {
+  float: right;
+  width: 49%;
+}
+#main .page .PersonRefereesForm #address-element textarea {
+  width: 96%
+}
+#main .page .PersonRefereesForm #address-element input {
+  width: 96%;
+}
+#main .page .PersonRefereesForm #email-element {
+  float: left;
+  width: 49%;
+}
+#main .page .PersonRefereesForm #email-element input {
+  width: 96%;
+}
+
+
+/**
+ * PersonFinancialsForm
+ */
+#main .page .PersonFinancialsForm #type-element {
+  float: left;
+  width: 20%;
+  margin-right: 1em;
+}
+#main .page .PersonFinancialsForm #type-element input {
+  width: 92%;
+}
+#main .page .PersonFinancialsForm #institution-element {
+  float: left;
+  width: 60%;
+}
+#main .page .PersonFinancialsForm #institution-element input {
+  width: 97%;
+}
+#main .page .PersonFinancialsForm #amount-element {
+  float: right;
+  width: 15%;
+}
+#main .page .PersonFinancialsForm #amount-element input {
+  width: 88%;
+}
+
+
+/**
+ * PersonDocumentsForm
+ */
+#main .page .PersonDocumentsForm #document-element {
+  float: left;
+  width: 37%;
+}
+#main .page .PersonDocumentsForm #description-element {
+  float: right;
+  width: 58%;
+}
+#main .page .PersonDocumentsForm #description-element input {
+  width: 97%;
+}
+
+
+/**
+ * TeachersForm
+ */
+#main .page .TeachersForm fieldset {
+  clear: both;
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 1em;  
+  padding-bottom: 1em;  
+}
+ #main .page .TeachersForm .form-fieldset li.form-element {
+  border: 0;
+  margin: 0 0.5em;
+  padding: 0;
+} 
+ #main .page .TeachersForm #group4-fieldset li.form-element {
+  width: 47%;
+} 
+ #main .page .TeachersForm #group4-fieldset textarea {
+  width: 97%;
+} 
+
+
+/**
+ * Recommendation letter
+ */
+#recommendationLetter .details h2 {
+  margin: 0;
+  padding: 3px;
+  background-color: #FF9900; 
+  color: white;
+}
+#recommendationLetter h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#recommendationLetter .details {
+  font-size: 108%;
+  margin-bottom: 1em;
+  border: 1px solid silver;
+}
+#recommendationLetter .details .content {
+  padding: 10px; 
+}
+#recommendationLetter .footer {
+  margin: 1em;
+}
+#recommendationLetter .footer p {
+  margin: 5px; 
+}
+#recommendationLetter #recommendation-element,
+#recommendationLetter #ranking-element {
+  float:left;
+  width: 40%;
+}
+#recommendationLetter #reference-element {
+  clear: both; 
+}
+#recommendationLetter #fieldset-personalData {
+  border: 1px solid silver;
+  padding: 10px;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+#recommendationLetter #fieldset-personalData legend {
+  padding: 10px;
+  padding-top: 0;
+}
+#main #recommendationLetter li.form-element {
+  border-width: 0;
+}
+#recommendationLetter #name-element {
+  float:left;
+  width: 30%;
+}
+#recommendationLetter #surname-element {
+  float:left;
+  width: 30%;
+}
+#recommendationLetter #email-element {
+  float:left;
+  width: 30%;
+}
+#recommendationLetter #institution-element {
+  float:left;
+  clear: left;
+  width: 30%;
+}
+#recommendationLetter #position-element {
+  float:left;
+  width: 30%;
+}
+#recommendationLetter #address-element {
+  clear: both;
+} 
+
+
+/**
+ * applicantShow
+ */
+#main #applicantShow h2 {
+  background-color: #D0E2FF;
+  color: #000000;
+  font-weight: normal;
+  padding: 0.2em 0.4em;
+  font-size: 108%;
+  margin-bottom: 1em;
+}
+#main #applicantShow table {
+  width: 100%;
+  margin-bottom: 1.5em;
+  border-collapse: collapse;  
+}
+#main #applicantShow table td {
+  padding: 0.3em;
+  border: 1px solid #000000;
+  vertical-align: top;
+  font-weight: bold;
+}
+#main #applicantShow table td.modules {
+  padding: 0;
+  border: 0;
+}
+#main #applicantShow table tr.thead td {
+  font-weight: normal;
+}
+#main #applicantShow table td span.label {
+  display: block;
+  font-size: 93%;
+  font-weight: normal;
+}
+#main #applicantShow table td h3 {
+  font-size: 123.1%;
+  text-align: center;
+}
+#main #applicantShow table td h4 {
+  font-size: 123.1%;
+  color: blue;
+  text-align: center;  
+}
+#main #applicantShow table table {
+  margin-bottom: 0;
+}
+#main #applicantShow table table td {
+  border: 0;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+}
+
+
+/**
+ * ProfileNavigation
+ */
+#profileNavigation {
+  background: #FFFFFF;
+  padding: 0;
+  margin: 30px 1em 1em 1em;  
+  border-bottom: 1px solid #263248;
+}
+#profileNavigation ul {
+  padding: 0;
+}
+#profileNavigation li {
+  font-size: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
+} 
+
+
+/**
+ * Plan of study
+ */
+#main #planStep2 ul.form-elements li.form-fieldset {
+  padding: 0;
+  margin-bottom: 1em;
+}
+#main #planStep2 ul.form-elements li.form-fieldset legend {
+  color: #990000;
+  padding-top: 1em;
+}
+#main #planStep2 ul.form-elements li.form-fieldset li.form-element {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#main #planStep2 ul.column li {
+  padding: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
+  position: relative;
+  cursor: pointer;
+}
+#main #planStep2 ul.column li.term {
+  clear: left;
+}
+#main #planStep2 ul.column li.credits,
+#main #planStep2 ul.column li.products {
+  float: right;
+}
+#main #planStep2 ul.column li:hover {
+  background: #F0F0F0;
+}
+#main #planStep2 ul.column li input {
+  position: absolute;
+  top: 0.8em;
+  left: 0.5em;
+}
+#main #planStep2 ul.column li.disabled {
+  cursor: default;  
+}
+#main #planStep2 ul.column li.disabled:hover {
+  background: none;
+}
+#main #planStep2 ul.module {
+  padding-left: 20px; 
+}
+#main #planStep2 ul.module li {
+  border: 0;
+  padding: 0;  
+}
+
+#main #planStep2 #dissertation-element {
+  float: left;
+  padding-top: 5px;
+}
+#main #planStep2 #productProjectTarget-element {
+  float: right;
+}
+#main #planStep2 #productProjectTarget-element label {
+  display: inline;
+}
+
+#planStep2Tabs span.credits {
+  font-size: 123.1%;
+  font-weight: bold;
+}
+
+#Plans .nonCompliant {
+  color: red;
+}
+
+/**
+ * Modules list
+ */
+#main #modulesIndex li {
+  list-style: none;
+}
+#main #modulesIndex .ui-widget {
+  font-size: 100%;
+}  
+#main #modulesIndex dt {
+  color: #990000;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}  
+#main #modulesIndex dd {
+  margin-bottom: 2em;  
+}  
+#main #modulesIndex ul.modules li {
+  padding: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
+}
+#main #modulesIndex ul.modules li:hover {
+  background: #F0F0F0;
+}
+#main #modulesIndex ul.modules ul.module li {
+  border: 0;
+  padding: 0;  
+}
+
+#main #specCredits {
+  padding: 0.5em;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/**
+ * Modules
+ */
+ul.module li {
+  float: left;
+}
+ul.module li.course {
+  width: 50%;
+} 
+ul.module li.teachers {
+  width: 30%;
+  text-transform: uppercase;
+} 
+ul.module li.credits {
+  width: 5%;
+}
+ul.module li.term {
+  width: 20%;
+}
+
+ul.module li a {
+  color: #0063A5;
+}
+ul.module li a:hover {
+  color: #6D2019;
+}
+
+.moduleGroup ul.module li.term {
+  display: none; 
+}
+
+ul.module li .alias {
+  display: block;
+  font-size: 50%;
+  line-height: 90%;
+}
+
+ul.module li .alias .required {
+  font-weight: bold;
+  color: red;
+}
+
+.moduleGroup ul.module li.teachers {
+  width: 45%;
+}
+
+/* Nella lista dei moduli, a seconda dei font */ 
+#modulesTabs > ul a {
+  font-size: 93%;
+}
+
+/* Nella scelta dei moduli, a seconda del project semester */
+.selectEcho {
+  display: none;
+}
+
+.projectTab .selectEcho {
+  display: block;
+}
+/**
+ * Module
+ */
+#main #modulesShow dl {
+  margin-left: 0;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #CCCCCC;
+  font-size: 108%;
+}
+#main #modulesShow dt {
+  float: left;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+#main #modulesShow dd {
+  margin-right: 1em;  
+}
+
+
+
+/**
+ * Teachers list
+ */
+#main #teachersIndex .ui-widget {
+  font-size: 100%;
+}  
+#main #teachersIndex dt {
+  color: #990000;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}   
+#main #teachersIndex dd {
+  margin-bottom: 2em;  
+}  
+#main #teachersIndex ul.teachers li {
+  padding: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
+  background: none;
+  margin: 0;
+  list-style: none outside;
+}
+#main #teachersIndex ul.teachers li:hover {
+  background: #F0F0F0;
+}
+
+
+/** 
+ * Breadcrumbs
+ */
+#breadcrumbs {
+  margin-bottom: 1em;
+  font-size: 85%;
+}
+
+
+/**
+ * Footer
+ */
+#ft {
+  background-color: #6A0000;;
+  color: #FFFFFF;
+}
+#ft p {
+  text-align: right;
+  padding: 1em 1em 1em 0;
+  margin: 0;
+}
+
+#cnt-loginForm {
+  min-height: 130px;
+}
+
+
+/**
+ * SimplyScroll
+ */
+.simply-scroll-container {
+	position: relative;
+  background-color: #E8E8E8;
+  margin-bottom: 5px;  
+  padding: 10px;
+  width: 180px;
+}
+.simply-scroll-list { /* UL/OL/DIV - the element that simplyScroll is inited on */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.simply-scroll-list li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.simply-scroll-list li h1 {
+  margin-bottom: 1.4em;
+}
+.simply-scroll-clip {
+  width: 180px;
+  height: 90px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+
+/**
+ * HelpDialog
+ */
+#helpDialog {
+  text-align: left;
+}
+
+
+/**
+ * Downloads
+ */
+#downloads dd {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #CCCCCC;
+  padding-bottom: 1em;
+}
+
+span.cke_skin_kama {
+  padding: 0 !important; 
+}
+
+#shortBio-element {
+  clear:left;
+}
+
+
+/**
+ * Featured student block
+ */
+#FeaturedStudent .content h4 {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+#FeaturedStudent .content h4 a {
+  text-decoration: none;
+}
+#FeaturedStudent .content img {
+  float: left;
+  margin-right: 0.5em;
+}
+#FeaturedStudent .content p {
+  font-size: 77%;
+  line-height: 1.2em;
+}
+
+
+/**
+ * Student/Alumnus page
+ */
+#peopleShow .picture {
+  float: right;
+  padding: 1em;
+  margin-left: 1em;
+} 
+#peopleShow .picture img {
+  width: 200px;
+} 
+
+
+#careersStudents h3,
+#careersAlumni h3 {
+  margin: 2em 0 1em 0;
+}
+#careersAlumni h4 {
+  margin-left: 1em;
+  font-weight: bold;
+  font-size: 108%;
+}
+#main #careersAlumni .text ul {
+  margin: 0.5em 0 1em 0;
+}
+
+
+/**
+ * Search box
+ */
+#SearchBox form {
+  margin: 0.5em;
+} 
+
+/**
+ * Search results
+ */
+#searchResults form {
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 2em;
+  padding-bottom: 1em;  
+}
+#searchResults dt {
+  margin-bottom: 1.4em;
+  font-size: 100%;
+  font-weight: bold;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#searchResults dt.Downloads {
+  background-image: url(/web/20190620032539im_/http://www.roseschool.it/img/disk-black.png);
+}
+#searchResults dt.Modules {
+  background-image: url(/web/20190620032539im_/http://www.roseschool.it/img/puzzle.png);
+}
+#searchResults dt.People {
+  background-image: url(/web/20190620032539im_/http://www.roseschool.it/img/user-silhouette.png);
+}
+#searchResults dt.SiteNews {
+  background-image: url(/web/20190620032539im_/http://www.roseschool.it/img/newspaper.png);
+}
+#searchResults dt.SitePages {
+  background-image: url(/web/20190620032539im_/http://www.roseschool.it/img/document.png);
+}
+#searchResults dt a {
+  text-decoration: none;
+}
+#searchResults dd {
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+/**
+ * Research topics
+ */
+#main .page .addressedTo,
+.topic .addressedTo {
+  font-weight: bold;
+  margin-bottom: 1em;
+  font-size: 85%;
+  color: #000000;
+}
+#main .teaser.topic form {
+  float: right;
+}
+#main .teaser.topic form a {
+  font-size: 12px;
+  padding: 2px;
+  text-decoration: none;
+  line-height: 1;
+}
+#main .teaser.topic form input {
+  font-size: 12px;
+  padding: 2px;
+  line-height: 1;
+}
+
+form.ResearchTopicsForm #title-element input {
+  width: 98%;
+}
+form.ResearchTopicsForm #addressedTo-element textarea {
+  width: 98%;
+}
