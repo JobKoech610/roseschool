@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="Copyright" content="http://www.roseschool.it">
+        <meta http-equiv="content-language" content="IT">
+        <meta name="Designer" content="http://www.renomo.com">
+        <meta name="Author" content="http://www.renomo.com">
+        <title>Home page - ROSE School</title>
+        <link href="/css/superfish.css" media="screen" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/css/styles.css" type="text/css">
+        <link rel="stylesheet" href="/css/jquery-ui.custom.css" type="text/css" media="screen">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+        <script src="/js/jquery.bgiframe.min.js"></script>
+        <script src="/js/jquery.simplyscroll.js"></script>
+        <script src="/js/jquery.form.js"></script>
+        <script src="/js/default.js"></script>
+        <link href="/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <link href="/css/superfish.css" media="screen" rel="stylesheet" type="text/css">
+        <link media="print" rel="stylesheet" type="text/css" href="/css/print.css">
+     </head>
+  <body>
+
+ 
+    <div id="custom-doc" class="yui-t7">
+      <div id="hd" role="banner">
+        <a href="/index.html" id="logo" title="ROSE School Home Page"><img src="/images/header_01.jpg" alt="Logo"></a>
+        <div class="sidebar">
+        <div id="UserBlock" class="block">      <div id="cnt-loginForm">
+      
+
+      </div>
+      <script>
+      (function() {
+        var $cnt = $('#cnt-loginForm');
+        $cnt.load("/session/new/format/html", null, function() {
+          $cnt.find('form').live('submit', function() {
+            $(this).attr('action', $(this).attr('action').safeAppend('/format/html'));
+            $(this).ajaxSubmit(function(data) {
+              if (data=='') {
+                location.href = location.href.replace('/sign/out','').safeAppend('?sign=in')
+//                location.reload();
+              } else {
+                $cnt.html(data);
+              }
+            });
+            return false;
+          });
+        });
+      })();
+      </script></div>        <ul class="newsScroll"><li><p>
+	<a href="http://civrisk.unipv.it/"><strong style="line-height: 1.231;"><span style="color: maroon; font-family: Calibri; font-size: 11pt;">Applications for the 2018/2019 edition of the ROSE Master Programme&nbsp;</span></strong><strong style="line-height: 1.231;"><span style="color: maroon; font-family: Calibri; font-size: 11pt;">- OPEN</span></strong><br/>
+	</a></p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p class="MsoNormal">
+	<span lang="EN-GB" style="font-size:11.0pt;font-family:Calibri;
+color:#990000;mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+</li></ul><script>$("#hd .newsScroll").simplyScroll({autoMode: "loop", horizontal: false, startOnLoad: true, frameRate: 10});</script>        </div>
+        <script src="/js/jquery.hoverIntent.minified.js"></script>
+<script src="/js/superfish.js"></script>
+
+<div id="siteNavigation">
+    <ul class="sf-menu">
+       <li id="sf-RoseNews"><a href="/news.html">Rose News</a></li>
+       <li id="sf-Education">
+          <a href="/page/57/education-programmes.html">Education</a>
+          <ul>
+             <li id="sf-EducationProgrammes"><a href="/page/57/education-programmes.html">Education Programmes</a></li>
+             <li id="sf-MasterDegree"><a href="/page/62/msc-degree-in-earthquake-engineering.html">Master Degree</a></li>
+             <li id="sf-PhDDegree"><a href="/page/64/phd-degree-in-earthquake-engineering-or-engineering-seismology.html">PhD Degree</a></li>
+             <li id="sf-JointPlacementDoctoratewithUniversityofToronto"><a href="/page/287/joint-placement-doctorate-with-university-of-toronto.html">Joint Placement Doctorate with University of Toronto</a></li>
+             <li id="sf-ErasmusMundus"><a href="/page/63/erasmus-mundus-masters-course.html">Erasmus Mundus</a></li>
+             <li id="sf-ShortCourses"><a href="/page/65/short-courses.html">Short Courses</a></li>
+             <li id="sf-OneMonthCourses"><a href="/page/144/one-month-courses.html">One-Month Courses</a></li>
+             <li id="sf-FinancialInformation"><a href="/page/166/financial-information.html">Financial Information</a></li>
+          </ul>
+       </li>
+       <li id="sf-Research">
+          <a href="/page/71/research-by-rose-students.html">Research</a>
+          <ul>
+             <li id="sf-Year2008"><a href="/page/218/year-2008.html">Year 2008</a></li>
+             <li id="sf-Year2007"><a href="/page/149/year-2007.html">Year 2007</a></li>
+             <li id="sf-Year2006"><a href="/page/131/year-2006.html">Year 2006</a></li>
+             <li id="sf-Year2005"><a href="/page/110/year-2005.html">Year 2005</a></li>
+  
+             
+           </ul>
+       </li>
+       <li id="sf-Applications">
+          <a href="/page/252/application-procedure.html">Applications</a>
+          <ul>
+             <li id="sf-ApplicationProcedure"><a href="/page/252/application-procedure.html">Application Procedure</a></li>
+             <li id="sf-ApplicationRequirements"><a href="/page/253/application-requirements.html">Application Requirements</a></li>
+          </ul>
+       </li>
+       <li id="sf-Seminars">
+          <a href="#">Seminars</a>
+          <ul>
+             <li id="sf-2015NigelPriestleySeminar"><a href="/news/2015/04/99/the-1st-international-nigel-priestley-seminar.html">2015 Nigel Priestley Seminar</a></li>
+             <li id="sf-2014ROSESeminar"><a href="/page/296/the-14th-international-rose-seminar-and-2nd-ume-school-seminar.html">2014 ROSE Seminar</a></li>
+             <li id="sf-2013ROSESeminar"><a href="/page/284/the-13th-international-rose-seminar.html">2013 ROSE Seminar</a></li>
+             <li id="sf-2012ROSESeminar"><a href="/page/279/the-12th-international-rose-seminar.html">2012 ROSE Seminar</a></li>
+             <li id="sf-2011ROSESeminar"><a href="/page/273/the-11th-international-rose-school-seminar.html">2011 ROSE Seminar</a></li>
+             <li id="sf-2010ROSESeminar"><a href="/page/217/2010-rose-seminar.html">2010 ROSE Seminar</a></li>
+  
+           
+          </ul>
+       </li>
+       <li id="sf-Courses">
+          <a href="/">Courses</a>
+          <ul>
+             <li id="sf-Year20172018"><a href="/modules/index/group/term/editions/2017-2018.html">Year 2017-2018</a></li>
+             <li id="sf-Year20162017"><a href="/modules/index/group/term/editions/2016-2017.html">Year 2016-2017</a></li>
+             <li id="sf-Year20152016"><a href="/modules/index/group/term/editions/2015-2016.html">Year 2015-2016</a></li>
+             <li id="sf-Year20142015"><a href="/modules/index/group/term/editions/2014-2015.html">Year 2014-2015</a></li>
+             <li id="sf-Year20132014"><a href="/modules/index/group/term/editions/2013-2014.html">Year 2013-2014</a></li>
+             <li id="sf-Year20122013"><a href="/modules/index/group/term/editions/2012-2013.html">Year 2012-2013</a></li>
+             <li id="sf-Year20112012"><a href="/modules/index/group/term/editions/2011-2012.html">Year 2011-2012</a></li>
+             <li id="sf-Year20102011"><a href="/modules/index/group/term/editions/2010-2011.html">Year 2010-2011</a></li>
+  
+                                
+          </ul>
+       </li>
+       <li id="sf-Faculty"><a href="/page/275/rose-school-faculty.html">Faculty</a></li>
+       <li id="sf-Students">
+          <a href="/page/292/ume-school-students.html">Students</a>
+          <ul>
+             <li id="sf-PhDStudents"><a href="/page/293/doctoral-students.html">PhD Students</a></li>
+             <li id="sf-ROSEMasterStudents"><a href="/page/289/rose-master-students.html">ROSE Master Students</a></li>
+             <li id="sf-MEEESMasterStudents"><a href="/page/290/meees-master-students.html">MEEES Master Students</a></li>
+          </ul>
+       </li>
+       <li id="sf-Agreements"><a href="/page/58/co-operation-agreements.html">Agreements</a></li>
+       <li id="sf-ContactUs"><a href="/page/130/contact-us.html">Contact Us</a></li>
+    </ul>
+  </div>
+<script type="text/javascript">
+  // initialise plugins
+  $(function(){
+    $('ul.sf-menu').superfish({ 
+      delay: 200,
+      speed: 'fast'
+    });
+  });
+</script>
+      </div>
+      <div id="bd" role="main">
+        <div class="yui-gd">
+          <div id="sidebar-left" class="yui-u first">
+            <a href="/prize/home.html"><img src="/images/prize2010.jpg" alt="Rose School Prize 2010"></a>
+            <div id="SearchBox" class="block">
+  <h3>Search</h3>    
+  <form action="">
+    <input type="text" name="q">
+    <input type="submit" value="Go">
+  </form>
+</div>            <div id="UsefulLinks" class="block">
+  <h3>Useful Links</h3>
+  <ul>
+    <li><a href="/page/124/useful-info.html" class="cmd show" title="show">Useful info</a></li>
+    <li><a href="">File Manager</a></li>
+    <li><a href="">ROSE Mail</a></li>
+  </ul>
+</div>                        <div id="FeaturedStudent" class="block">
+  <h3>Students</h3>
+  <div class="content clearfix">
+  <h4>Francesco Graziotti</h4>
+    <img src="/images/small_9915_temeculaquad.jpg" alt="Avatar" class="avatar">
+    <p></p>
+  </div>
+</div>            
+          </div>
+          <div id="main" class="yui-u">
+            <div id="flashWrapper" class="ui-widget">
+              <div id="flash" class="ui-state-highlight ui-corner-all">
+                <span class="ui-icon ui-icon-info"></span>
+                <p></p>
+              </div>
+            </div>
+                        <div class="page clearfix">
+  <h1 class="title">Prof. DENIS LEBOEUF</h1>
+    <div class="text">
+  <p>
+	Professor of Civil Engineering</p>
+<p>
+	Department of Civil Engineering - Faculty of Sciences and Engineering<br/>
+	Laval University -&nbsp;<span style="line-height: 1.231;">Quebec City, Canada</span></p>
+<p>
+	<strong>EDUCATION</strong></p>
+<p>
+	- GRADUATE and UNDERGRADUATE TEACHING IN CIVIL ENGINEERING:</p>
+<p>
+	<span style="line-height: 1.231;">Undergraduate: Soil Mechanics, Foundation Engineering, Foundation Engineering Design; </span></p>
+<p>
+	<span style="line-height: 1.231;">Graduate: Geotechnical Earthquake Engineering since 2000</span></p>
+<p>
+	- RESEARCH IN GEOTECHNICAL EARTHQUAKE ENGINEERING</p>
+<p>
+	<span style="line-height: 1.231;">Sponsored scientific research (since 1994) from Natural Sciences and Engineering Research Council of Canada (NSERC) in geotechnical earthquake engineering</span></p>
+<p>
+	<strong>ACADEMIC EMPLOYMENT</strong></p>
+<p>
+	<span style="line-height: 1.231;">- Professor of Civil Engineering, Department of Civil Engineering, Faculty of Sciences and Engineering, Universit&eacute; Laval, Quebec City, Canada; Specialization in Geotechnical Earthquake Engineering</span></p>
+<p>
+	<span style="line-height: 1.231;">- Active geotechnical research and consulting collaboration with all the main engineering and governemental agencies in Qu&eacute;bec: Minist&egrave;re des transports du Qu&eacute;bec, Hydro-Qu&eacute;bec, &Eacute;cole Polytechnique, Ministry of Health, Ministry of Education, IRSST, AECOM, City of Qu&eacute;bec, Protection Civile Canada, SNC-Lavalin.</span></p>
+<p>
+	<span style="line-height: 1.231;">- Sept 2013-Feb. 2014 and May-June 2016&nbsp;: Invited Researcher, Universit&eacute; Paris-Est, IFSTTAR, GERS (G&eacute;otechnique, Environnement, Risques naturels et Sciences de la terre),&nbsp; Laboratoire S&eacute;ismes et Vibrations (with Dr. J-F Semblat), Paris, France</span></p>
+<p>
+	<span style="line-height: 1.231;">- May 2012-present : Member, Centre d&#39;&Eacute;tudes Interuniversitaire des Structures sous Charges Extr&ecirc;mes (CEISCE), University of de Sherbrooke (PI&nbsp;: Pr. P. Paultre)</span></p>
+<p>
+	- Fellow, Engineering Institute of Canada (2013)</p>
+<p>
+	<strong>SELECTED PUBLICATIONS</strong></p>
+<p>
+	- S. Bouchard, J.-S. L&rsquo;Heureux, J. Johansson, S. Leroueil &amp; D. LeBoeuf (2016), <em>&quot;Blasting induced landslides in sensitive clays&quot;</em>, ISL2016, 12th Int. Symp. Landslides, June 12-19, 2016, Naples, Italie</p>
+<p>
+	- LeBoeuf, D.&nbsp; (2014),&nbsp;<em>&quot;State-of-the Art Report for Liquefaction Evaluation for Eastern Canada Soils&quot;</em>, Laval Univ., Technical Rep. for Minist&egrave;re des transports du Qu&eacute;bec</p>
+<p>
+	- Verret, D. &amp; LeBoeuf, D. (2015), <em>&quot;State of the Art Report on the Dynamic Response of Earth and Rockfill Dams&quot;</em>, Laval Univ., Technical Report submitted to Hydro-Qu&eacute;bec Production, 71 p.</p>
+<p>
+	- Verret, D. &amp; LeBoeuf, D. (2015), <em>&quot;Effets de site au barrage en enrochement&nbsp; Denis-Perron (SM-3), Qu&eacute;bec&quot;</em>, 68th Can. Geot. Conf., Sept. 2015, Quebec City.</p>
+<p>
+	- Bouchard, S. LeBoeuf, D. Leroueil, S. et al (2015) <em>&ldquo;Analysis of a blast loading near sensitive clay slope in La Romaine village&rdquo;</em>, Quebec, 68th Can. Geotechnical Conference, Sept. 2015, Quebec City.</p>
+<p>
+	- Verret, D. et LeBoeuf, D. (2015), <em>&quot;Development of a Structured Methodology for Verification and Validation in Geotechnical Engineering&quot;</em>, SC-4 Workshop on Numerical Analysis for Embankment and Rockfill Dams - Verification &amp; Validation for Better Prediction Quebec City, Sept 20&nbsp; 2015</p>
+<div>
+	<p>
+		<span style="line-height: 1.231;">- Bruneau, M., Uang, C.M., and Sabelli, R., <em>&quot;Ductile Design of Steel Structures&quot;</em>, 2nd Edition, McGraw-Hill, Inc., 2011.</span></p>
+</div>
+<p>
+	- Leet, K., Uang, C.M., and Gilbert, A., <em>&quot;Fundamentals of Structural Analysis</em>&quot;, 4th Edition, McGraw-Hill, Inc., 2010.</p>  </div>
+  </div>
+          
+          </div>
+        </div>
+      </div>
+      <div id="ft" role="contentinfo">
+        <p>ROSE School ©2019 – All rights reserved.</p>
+      </div>
+    </div>
+        
+
+      </body>
+</html>

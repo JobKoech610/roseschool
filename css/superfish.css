@@ -95,7 +95,7 @@ ul.sf-menu li li li.sfHover ul {
 	height:			10px;
 	text-indent: 	-999em;
 	overflow:		hidden;
-	background:		url('/web/20190620032540im_/http://www.roseschool.it/RenomoZF/js/superfish/images/arrows-ffffff.png') no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+	background:		url('/images/arrows-ffffff.png') no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
 }
 a > .sf-sub-indicator {  /* give all except IE6 the correct values */
 	top:			.8em;

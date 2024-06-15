@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="Copyright" content="http://www.roseschool.it">
+    <meta http-equiv="content-language" content="IT">
+    <meta name="Designer" content="http://www.renomo.com">
+    <meta name="Author" content="http://www.renomo.com">    
+        <title>Home page - ROSE School</title>        <link href="/css/superfish.css" media="screen" rel="stylesheet" type="text/css"> 
+        <link rel="stylesheet" href="/css/styles.css" type="text/css">
+
+    <link rel="stylesheet" href="/css/jquery-ui.custom.css" type="text/css" media="screen">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+
+    
+    <script src="/js/jquery.bgiframe.min.js"></script>
+    <script src="/js/jquery.simplyscroll.js"></script>
+    <script src="/js/jquery.form.js"></script>
+    <script src="/js/default.js"></script>
+    <link href="/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<link href="/css/superfish.css" media="screen" rel="stylesheet" type="text/css">        <link media="print" rel="stylesheet" type="text/css" href="css/print.css">
+  </head>
+  <body>
+
+ 
+    <div id="custom-doc" class="yui-t7">
+      <div id="hd" role="banner">
+        <a href="/index.html" id="logo" title="ROSE School Home Page"><img src="/images/header_03.jpg" alt="Logo"></a>
+        <div class="sidebar">
+        <div id="UserBlock" class="block">      <div id="cnt-loginForm">
+      
+
+      </div>
+      <script>
+      (function() {
+        var $cnt = $('#cnt-loginForm');
+        $cnt.load("/session/new/format/html", null, function() {
+          $cnt.find('form').live('submit', function() {
+            $(this).attr('action', $(this).attr('action').safeAppend('/format/html'));
+            $(this).ajaxSubmit(function(data) {
+              if (data=='') {
+                location.href = location.href.replace('/sign/out','').safeAppend('?sign=in')
+//                location.reload();
+              } else {
+                $cnt.html(data);
+              }
+            });
+            return false;
+          });
+        });
+      })();
+      </script></div>        <ul class="newsScroll"><li><p>
+	<a href="http://civrisk.unipv.it/"><strong style="line-height: 1.231;"><span style="color: maroon; font-family: Calibri; font-size: 11pt;">Applications for the 2018/2019 edition of the ROSE Master Programme&nbsp;</span></strong><strong style="line-height: 1.231;"><span style="color: maroon; font-family: Calibri; font-size: 11pt;">- OPEN</span></strong><br/>
+	</a></p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p class="MsoNormal">
+	<span lang="EN-GB" style="font-size:11.0pt;font-family:Calibri;
+color:#990000;mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+</li></ul><script>$("#hd .newsScroll").simplyScroll({autoMode: "loop", horizontal: false, startOnLoad: true, frameRate: 10});</script>        </div>
+        <script src="/js/jquery.hoverIntent.minified.js"></script>
+<script src="/js/superfish.js"></script>
+
+<div id="siteNavigation">
+  <ul class="sf-menu">
+     <li id="sf-RoseNews"><a href="/news.html">Rose News</a></li>
+     <li id="sf-Education">
+        <a href="/page/57/education-programmes.html">Education</a>
+        <ul>
+           <li id="sf-EducationProgrammes"><a href="/page/57/education-programmes.html">Education Programmes</a></li>
+           <li id="sf-MasterDegree"><a href="/page/62/msc-degree-in-earthquake-engineering.html">Master Degree</a></li>
+           <li id="sf-PhDDegree"><a href="/page/64/phd-degree-in-earthquake-engineering-or-engineering-seismology.html">PhD Degree</a></li>
+           <li id="sf-JointPlacementDoctoratewithUniversityofToronto"><a href="/page/287/joint-placement-doctorate-with-university-of-toronto.html">Joint Placement Doctorate with University of Toronto</a></li>
+           <li id="sf-ErasmusMundus"><a href="/page/63/erasmus-mundus-masters-course.html">Erasmus Mundus</a></li>
+           <li id="sf-ShortCourses"><a href="/page/65/short-courses.html">Short Courses</a></li>
+           <li id="sf-OneMonthCourses"><a href="/page/144/one-month-courses.html">One-Month Courses</a></li>
+           <li id="sf-FinancialInformation"><a href="/page/166/financial-information.html">Financial Information</a></li>
+        </ul>
+     </li>
+     <li id="sf-Research">
+        <a href="/page/71/research-by-rose-students.html">Research</a>
+        <ul>
+           <li id="sf-Year2008"><a href="/page/218/year-2008.html">Year 2008</a></li>
+           <li id="sf-Year2007"><a href="/page/149/year-2007.html">Year 2007</a></li>
+           <li id="sf-Year2006"><a href="/page/131/year-2006.html">Year 2006</a></li>
+           <li id="sf-Year2005"><a href="/page/110/year-2005.html">Year 2005</a></li>
+
+           
+         </ul>
+     </li>
+     <li id="sf-Applications">
+        <a href="/page/252/application-procedure.html">Applications</a>
+        <ul>
+           <li id="sf-ApplicationProcedure"><a href="/page/252/application-procedure.html">Application Procedure</a></li>
+           <li id="sf-ApplicationRequirements"><a href="/page/253/application-requirements.html">Application Requirements</a></li>
+        </ul>
+     </li>
+     <li id="sf-Seminars">
+        <a href="#">Seminars</a>
+        <ul>
+           <li id="sf-2015NigelPriestleySeminar"><a href="/news/2015/04/99/the-1st-international-nigel-priestley-seminar.html">2015 Nigel Priestley Seminar</a></li>
+           <li id="sf-2014ROSESeminar"><a href="/page/296/the-14th-international-rose-seminar-and-2nd-ume-school-seminar.html">2014 ROSE Seminar</a></li>
+           <li id="sf-2013ROSESeminar"><a href="/page/284/the-13th-international-rose-seminar.html">2013 ROSE Seminar</a></li>
+           <li id="sf-2012ROSESeminar"><a href="/page/279/the-12th-international-rose-seminar.html">2012 ROSE Seminar</a></li>
+           <li id="sf-2011ROSESeminar"><a href="/page/273/the-11th-international-rose-school-seminar.html">2011 ROSE Seminar</a></li>
+           <li id="sf-2010ROSESeminar"><a href="/page/217/2010-rose-seminar.html">2010 ROSE Seminar</a></li>
+
+         
+        </ul>
+     </li>
+     <li id="sf-Courses">
+        <a href="/">Courses</a>
+        <ul>
+           <li id="sf-Year20172018"><a href="/modules/index/group/term/editions/2017-2018.html">Year 2017-2018</a></li>
+           <li id="sf-Year20162017"><a href="/modules/index/group/term/editions/2016-2017.html">Year 2016-2017</a></li>
+           <li id="sf-Year20152016"><a href="/modules/index/group/term/editions/2015-2016.html">Year 2015-2016</a></li>
+           <li id="sf-Year20142015"><a href="/modules/index/group/term/editions/2014-2015.html">Year 2014-2015</a></li>
+           <li id="sf-Year20132014"><a href="/modules/index/group/term/editions/2013-2014.html">Year 2013-2014</a></li>
+           <li id="sf-Year20122013"><a href="/modules/index/group/term/editions/2012-2013.html">Year 2012-2013</a></li>
+           <li id="sf-Year20112012"><a href="/modules/index/group/term/editions/2011-2012.html">Year 2011-2012</a></li>
+           <li id="sf-Year20102011"><a href="/modules/index/group/term/editions/2010-2011.html">Year 2010-2011</a></li>
+
+                              
+        </ul>
+     </li>
+     <li id="sf-Faculty"><a href="/page/275/rose-school-faculty.html">Faculty</a></li>
+     <li id="sf-Students">
+        <a href="/page/292/ume-school-students.html">Students</a>
+        <ul>
+           <li id="sf-PhDStudents"><a href="/page/293/doctoral-students.html">PhD Students</a></li>
+           <li id="sf-ROSEMasterStudents"><a href="/page/289/rose-master-students.html">ROSE Master Students</a></li>
+           <li id="sf-MEEESMasterStudents"><a href="/page/290/meees-master-students.html">MEEES Master Students</a></li>
+        </ul>
+     </li>
+     <li id="sf-Agreements"><a href="/page/58/co-operation-agreements.html">Agreements</a></li>
+     <li id="sf-ContactUs"><a href="/page/130/contact-us.html">Contact Us</a></li>
+  </ul>
+</div>
+<script type="text/javascript">
+  // initialise plugins
+  $(function(){
+    $('ul.sf-menu').superfish({ 
+      delay: 200,
+      speed: 'fast'
+    });
+  });
+</script>
+      </div>
+      <div id="bd" role="main">
+        <div class="yui-gd">
+          <div id="sidebar-left" class="yui-u first">
+            <a href="/prize/home.html"><img src="/images/prize2010.jpg" alt="Rose School Prize 2010"></a>
+            <div id="SearchBox" class="block">
+  <h3>Search</h3>    
+  <form action="">
+    <input type="text" name="q">
+    <input type="submit" value="Go">
+  </form>
+</div>            <div id="UsefulLinks" class="block">
+  <h3>Useful Links</h3>
+  <ul>
+    <li><a href="/page/124/useful-info.html" class="cmd show" title="show">Useful info</a></li>
+    <li><a href="">File Manager</a></li>
+    <li><a href="">ROSE Mail</a></li>
+  </ul>
+</div>                        <div id="FeaturedStudent" class="block">
+  <h3>Students</h3>
+  <div class="content clearfix">
+  <h4>Adriana Ayala</h4>
+    
+    <p></p>
+  </div>
+</div>            
+          </div>
+          <div id="main" class="yui-u">
+            <div id="flashWrapper" class="ui-widget">
+              <div id="flash" class="ui-state-highlight ui-corner-all">
+                <span class="ui-icon ui-icon-info"></span>
+                <p></p>
+              </div>
+            </div>
+                        <div class="page clearfix">
+  <h1 class="title">Prof. CARLO G. LAI</h1>
+    
+ 
+    <div class="text">
+  <p>
+	Dr. Carlo G. Lai is Associate Professor of Geotechnical Engineering and Seismic Geotechnique at the Department of Civil Engineering and Architecture of the University of Pavia and Head of Geotechnical Engineering and Engineering Seismology Section at the European Centre for Training and Research in Earthquake Engineering (EUCENTRE) in Pavia, Italy. He is also Lecturer of Wave Propagation in Elastic Solids and Geotechnical Earthquake Engineering at the ROSE School &ndash; IUSS in Pavia.<br/>
+	Dr. Lai holds a Laurea in Civil Engineering from Politecnico di Torino (Italy), a MSc in Civil Engineering, a MSc in Engineering Science and Mechanics and a PhD in Civil Engineering from Georgia Institute of Technology (Atlanta, USA).<br/>
+	Relevant professional activities include a period of three years where he worked as project leader for the Institute for University Cooperation in a co-operation program in Ethiopia on behalf of the Italian Ministry of Foreign Affairs and six years as a scientific consultant at Studio Geotecnico Italiano (Milan).<br/>
+	Dr. Lai is author/co-author of more than 100 refereed publications including two books and few computer applications. His research interests are in engineering seismology and geotechnical earthquake engineering with particular emphasis on stochastic ground response analyses, probabilistic seismic hazard assessment and microzonation, propagation of Rayleigh waves in dissipative media aimed at determining deformability moduli and damping ratio in soil deposits, solution of dynamic soil-structure interaction problems relevant to earthquake engineering, definition of seismic input at construction sites.<br/>
+	He has been the coordinator of several research projects on various subjects of engineering seismology and earthquake geotechnical engineering. Currently he coordinates projects on the mitigation of seismic risk in maritime ports structures and earth dams, on the seismic hazard in the Eastern Caribbean region, on landslide stabilization with large-diameter shafts through physical modeling in seismic centrifuge and on the definition of seismic input at archaeological sites in Southern India.<br/>
+	Dr. Lai is active and/or affiliated member in a variety of scientific and professional institutions. In 2003 he was awarded with the Bishop Research Medal from the British Institution of Civil Engineers (ICE) for the best research contribution in Geotechnical Engineering published by ICE in 2002.</p>
+<p>
+	<strong>SELECTED RECENT PUBLICATIONS<br/>
+	</strong></p>
+<ul>
+	<li>
+		Corigliano, M., Lai, C.G., Rota, M., Strobbia, C. (2011). &ldquo;ASCONA: Automated Selection of COmpatible Natural Accelerograms&rdquo;. In stampa sulla rivista Earthquake Spectra.</li>
+	<li>
+		Bozzoni, F., Corigliano, M., Lai, C.G., Salazar, W., Scandella, L., Zuccolo, E., Latchman, J., Lynch. L., Robertson, R. (2011). &ldquo;Probabilistic Seismic Hazard Assessment at the Eastern Caribbean Islands&rdquo;. Bulletin of Seismological Society of America, Vol.101, No.5, pp. 2499-2521.</li>
+	<li>
+		Scandella, L., Lai, C.G., Spallarossa, D., Corigliano, M. (2011). &ldquo;Ground Shaking Scenarios at the Town of Vicoforte, Italy&rdquo;. Soil Dynamics and Earthquake Engineering, Vol. 31, pp. 757-772.</li>
+	<li>
+		Rota, M., Lai, C.G., Strobbia, C.L. (2011). &ldquo;Stochastic 1D Site Response Analysis at a Site in Central Italy&rdquo;. Soil Dynamics and Earthquake Engineering, Vol. 31, pp. 626-639.</li>
+	<li>
+		Menon, A., Ornthammarath, T., Corigliano, M., Lai, C.G. (2010). &ldquo;Probabilistic Seismic Hazard Macrozonation of Tamil Nadu in Southern India&rdquo;. Bulletin of Seismological Society of America, Vol.100, No.3, pp. 1320-1341.</li>
+	<li>
+		Pasquali, R., Lai, C.G., Corigliano, M. (2010). &ldquo;Some Issues in Seismic Analysis and Design of Blockwork Wharves&rdquo;. Journal of Earthquake Engineering, Vol. 14, No. 1, pp. 102-130.</li>
+	<li>
+		Lai, C.G., Corigliano, M., Agosti, M. (2009). &ldquo;Dams and Earthquakes: the Case of L&rsquo;Aquila Seism&rdquo;. Progettazione Sismica. Vol. 1, No. 3, pp. 183-205.</li>
+	<li>
+		Khan, Z.H., Cascante, G., El Naggar, M.H. and Lai, C.G. (2008). &ldquo;Measurement of Frequency-Dependent Dynamic Properties of Soils Using the Resonant-Column Device&rdquo;. Journal of Geotechnical and Geoenvironmental Engineering. Vol. 134, No. 9, pp. 1319&ndash;1326.</li>
+	<li>
+		Meza-Fajardo, K.C., and Lai, C.G. (2007). &ldquo;Explicit Causal Relations between Material Damping Ratio and Phase Velocity from Exact Solutions of the Dispersion Equations of Linear Viscoelasticity&rdquo;. Geophysical Journal International, Vol. 171, No. 3, pp. 1247-1257.</li>
+	<li>
+		Lo Presti, D., Lai, C.G., Puci, I. (2006) &ldquo;ONDA (One-dimensional Non-linear Dynamic Analyses): A Computer Code for Non-Linear Seismic Response Analyses of Soil Deposits.&rdquo;, Journal of Geotechnical and Geoenvironmental Engineering, ASCE, Vol. 132, No.2, pp. 223-236.</li>
+	<li>
+		Beltrami, C., Lai, C.G., Pecker, A. (2005). &ldquo;A Kinematic Interaction Model for a Large-Diameter Shaft Foundation. An Application to Seismic Demand Assessment of a Bridge Subject to Coupled Swying-Rocking Excitation&rdquo;, Journal of Earthquake Engineering, Vol. 9, Special Issue 2, pp. 355-393.</li>
+	<li>
+		Lai, C.G., Callerio, A., Faccioli, E., Morelli, V., Romani, P. (2005). &ldquo;Prediction of Railway-Induced Ground Vibrations in Tunnels&rdquo;, Journal of Vibration and Acoustics, ASME, Vol. 127(5), pp. 503-514.</li>
+	<li>
+		Lai, C.G., Foti, S., Rix, G.J. (2005). &ldquo;Propagation of Data Uncertainty in Surface Wave Inversion&rdquo;, Journal of Environmental and Engineering Geophysics, 10(2), pp. 219-228.</li>
+	<li>
+		Menon, A., Lai, C.G., Macchi, G. (2004). &ldquo;Seismic Hazard Assessment of the Historical Site of Jam in Afghanistan and Stability Analysis of the Minaret&rdquo;, Journal of Earthquake Engineering, Vol. 8, Special Issue 1, pp. 1-44.</li>
+	<li>
+		Lai, C.G., Rix, G.J. (2002). &ldquo;Solution of the Rayleigh Eigenproblem in Viscoelastic Media&rdquo;, Bulletin of Seismological Society of America, Vol.92, No.6, pp. 2297-2309.</li>
+	<li>
+		Lai, C.G., Rix, G.J., Foti, S., Roma, V. (2002). &ldquo;Simultaneous Measurement and Inversion of Surface Wave Dispersion and Attenuation Curves&rdquo;. Soil Dynamics and Earthquake Engineering, Vol. 22, No. 9-12, pp. 923-930.</li>
+	<li>
+		Foti, S., Lai, C.G., Lancellotta, R. (2002). &ldquo;Porosity of Fluid-Saturated Porous Media from Measured Seismic Wave Velocities&rdquo;. G&eacute;otechnique, Vol. 52, No. 5, pp. 359-373.</li>
+</ul>  </div>
+  </div>
+          
+          </div>
+        </div>
+      </div>
+      <div id="ft" role="contentinfo">
+        <p>ROSE School ©2019 – All rights reserved.</p>
+      </div>
+    </div>
+        
+
+      </body>
+</html>

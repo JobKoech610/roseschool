@@ -1,0 +1,786 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	
+	background-color:#E4E4E4;
+	margin:0px;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-style:normal;
+	padding-top:10px;
+	background-image:url(/prize/images/sfondo_body.jpg);
+	background-repeat:repeat-x;
+
+	
+}
+
+
+
+#maincontainer{
+	background-color:#FFFFFF;
+	/*height:1900px;*/
+	width:1000px;
+	margin:0px;
+	padding:0px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+
+
+
+
+#containerhead{
+	
+	width:1000px;
+	height:159px;
+	
+}
+
+#top{
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:1000px;
+	height:62px;
+	
+}
+
+#top_left{
+	margin:0px;
+	padding:0px;
+	float:left;
+	background-image:url(/prize/images/top_left.jpg);
+	height:62px;
+	width:24px;
+}
+
+
+#top_centro{
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:952px;
+	height:62px;
+	background-image:url(/prize/images/top_centro.jpg);
+	background-repeat:repeat-x;
+}
+
+#top_right{
+	margin:0px;
+	padding:0px;
+	float:left;
+	background-image:url(/prize/images/top_right.jpg);
+	height:62px;
+	width:24px;
+}
+
+#sito_rose a:link, #sito_rose a:visited{
+	
+	float:right;
+	font-size:14px;
+	font-style:normal;
+	font-weight:bold;
+	color:#FFFFFF;
+	margin-right:22px;
+	margin-top:26px;
+	text-decoration:none;
+	/*
+	text-decoration:none;
+	background-image:url(/prize/images/scritta_top.jpg);*/
+}
+
+
+
+#containerloghi{
+margin:0px;
+padding:0px;
+width:1000px;
+height:70px;
+float:left;
+vertical-align:top;
+
+}
+
+
+#logorose a:link, #logorose a:visited{
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:109px;
+	height:38px;
+	margin-top:15px;
+	margin-right:50px;
+	margin-left:78px;
+	background-image:url(/prize/images/logo.jpg);
+	background-repeat:no-repeat;
+}
+
+
+#logorose a:hover, #logorose a:focus, #logorose a:active{
+	/*
+	margin:0px;
+	padding:0px;
+	float:right;
+	width:109px;
+	height:38px;
+	margin-top:15px;
+	margin-right:50px;
+	background-image:url(/prize/images/logo_over.jpg);
+	background-repeat:no-repeat;
+	*/
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:109px;
+	height:38px;
+	margin-top:15px;
+	margin-right:50px;
+	margin-left:78px;
+	background-image:url(/prize/images/logo_over.jpg);
+	background-repeat:no-repeat;
+	
+}
+
+#logoume a:link, #logoume a:visited{
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:283px;
+	height:38px;
+	margin-top:15px;
+	margin-right:50px;
+	margin-left:78px;
+	background-image:url(/prize/images/logo.jpg);
+	background-repeat:no-repeat;
+}
+
+
+#logoume a:hover, #logoume a:focus, #logoume a:active{
+	
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:283px;
+	height:38px;
+	margin-top:15px;
+	margin-right:50px;
+	margin-left:78px;
+	background-image:url(/prize/images/logo_ume_over.jpg);
+	background-repeat:no-repeat;
+	
+}
+
+
+#menu{
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:850px;
+	height:38px;
+	margin:0px;
+	margin-left:100px;
+	margin-top:15px;
+	padding-top:0px;
+	vertical-align:top;
+	
+}
+
+
+
+#bottone{
+
+	float:left;
+	width:120px;
+	height:38px;
+	/*background-image:url(/prize/images/menu.jpg);
+	background-repeat:repeat-x;*/
+	text-align:center;
+	font-weight:bold;
+	color:#FFFFFF;
+	margin:0px;
+	padding:0px;
+	
+}
+
+#bottone a:link, #bottone a:visited{
+	float: left;
+	background-image:url(/prize/images/menu.jpg);
+	background-repeat:repeat-x;
+	height:38px;
+	width:120px;
+	color:#FFFFFF;
+	text-decoration:none;
+	font-weight:bold;
+	margin:0px;
+	padding:0px;
+	padding-top:9px;
+}
+
+#bottone a:hover, #bottone a:focus, #bottone a:active{
+	float: left;
+	height:28px;
+	width:120px;
+	color:#330000;
+	background:#CCCCCC;
+	margin:0px;
+	padding:0px;
+	padding-top:9px;
+}
+
+
+#bottone_2{
+
+	float:left;
+	width:280px;
+	height:38px;
+	/*background-image:url(/prize/images/menu.jpg);
+	background-repeat:repeat-x;*/
+	text-align:center;
+	font-weight:bold;
+	color:#FFFFFF;
+	margin:0px;
+	padding:0px;
+	
+}
+
+#bottone_2 a:link, #bottone_2 a:visited{
+	float: left;
+	background-image:url(/prize/images/menu.jpg);
+	background-repeat:repeat-x;
+	height:38px;
+	width:280px;
+	color:#FFFFFF;
+	text-decoration:none;
+	font-weight:bold;
+	margin:0px;
+	padding:0px;
+	padding-top:9px;
+}
+
+#bottone_2 a:hover, #bottone_2 a:focus, #bottone_2 a:active{
+	float: left;
+	height:28px;
+	width:280px;
+	color:#330000;
+	background:#CCCCCC;
+	margin:0px;
+	padding:0px;
+	padding-top:9px;
+}
+
+#separatore_menu{
+	float:left;
+	width:2px;
+	height:38px;
+	background-image:url(/prize/images/separatore_menu.jpg);
+	background-repeat:repeat-x;
+	margin:0px;
+	padding:0px;
+}
+
+#menu_sinistra{
+
+	float:left;
+	width:20px;
+	height:38px;
+	background-image:url(/prize/images/menu_sinistra.jpg);
+	
+	margin:0px;
+	padding:0px;
+
+}
+
+#menu_destra{
+
+	float:left;
+	width:20px;
+	height:38px;
+	background-image:url(/prize/images/menu_destra.jpg);
+	margin:0px;
+	padding:0px;
+
+}
+
+
+
+#immagine{
+	/*
+	margin:0px;
+	padding:0px;
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	width:500px;
+	height:270px;
+	background-image:url(/prize/images/premio.jpg);
+	background-repeat:no-repeat;
+	*/
+	
+	margin:0px;
+	padding:0px;
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:405px;
+	background-image:url(/prize/images/premio2.jpg);
+	background-repeat:no-repeat;
+	
+	
+	
+}
+
+#scritta{
+	/*border:thin;
+	border-style:solid;
+	border-color:#000000;*/
+	width:529px;
+	height:68px;
+	margin:0px;
+	padding:0px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(/prize/images/scritta.jpg);
+	background-repeat:no-repeat;
+}
+
+#scritta2{
+	/*border:thin;
+	border-style:solid;
+	border-color:#000000;*/
+	width:376px;
+	height:45px;
+	margin:0px;
+	padding:0px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(/prize/images/scritta2.jpg);
+	background-repeat:no-repeat;
+	margin-bottom:10px;
+}
+
+#scritta3{
+	/*border:thin;
+	border-style:solid;
+	border-color:#000000;*/
+	width:376px;
+	height:45px;
+	margin:0px;
+	padding:0px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(/prize/images/scritta2.jpg);
+	background-repeat:no-repeat;
+	margin-bottom:10px;
+}
+
+#scritta2008{
+	/*border:thin;
+	border-style:solid;
+	border-color:#000000;*/
+	width:777px;
+	height:43px;
+	margin:0px;
+	padding:0px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(/prize/images/scritta2008.jpg);
+	background-repeat:no-repeat;
+}
+
+#scritta2010{
+	/*border:thin;
+	border-style:solid;
+	border-color:#000000;*/
+	width:777px;
+	height:68px;
+	margin:0px;
+	padding:0px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(/prize/images/scritta_2010.jpg);
+	background-repeat:no-repeat;
+}
+
+#scritta2012{
+	/*border:thin;
+	border-style:solid;
+	border-color:#000000;*/
+	width:523px;
+	height:68px;
+	margin:0px;
+	padding:0px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(/prize/images/scritta_2012.jpg);
+	background-repeat:no-repeat;
+}
+
+#intro{
+	margin-left:auto;
+	margin-right:auto;
+	width:820px;
+	height:70px;
+	font-size:17px;
+	font-weight:bold;
+	text-align:center;
+}
+
+#testo{
+	margin:0px;
+	paddin:0px;
+	width:900px;
+	height:870px;
+	margin-left:auto;
+	margin-right:auto;
+	/*border:thin;
+	border-style:solid;
+	border-color:#000000;*/
+}
+
+#testo_prize{
+	margin:0px;
+	paddin:0px;
+	width:900px;
+	height:1070px;
+	margin-left:auto;
+	margin-right:auto;
+	/*border:thin;
+	border-style:solid;
+	border-color:#000000;*/
+}
+
+#testo_selection{
+	margin:0px;
+	paddin:0px;
+	width:900px;
+	height:330px;
+	margin-left:auto;
+	margin-right:auto;
+	/*border:thin;
+	border-style:solid;
+	border-color:#000000;*/
+}
+
+#testo_home{
+	margin:0px;
+	paddin:0px;
+	width:900px;
+	height:230px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+
+#titoli{
+font-weight:bold;
+color:#003366;
+}
+
+#titoli2{
+font-weight:bold;
+color:#003366;
+}
+
+
+p{
+text-align:justify;
+}
+
+
+#separatore_bottom{
+	/*border:thin;
+	border-style:solid;
+	border-color:#000000;*/
+	width:1000px;
+	height:8px;
+	background-image:url(/prize/images/separatore_bottom.jpg);
+	background-repeat:repeat-x;
+	font-size:1px;
+
+}
+
+#separatore_top{
+	
+	float:left;
+	width:1000px;
+	height:8px;
+	background-image:url(/prize/images/separatore_bottom.jpg);
+	background-repeat:repeat-x;
+	margin:0px;
+	padding:0px;
+	font-size:1px;
+	
+
+}
+
+#contenitore_tappo{
+	
+	width:1000px;
+	height:230px;
+}
+
+#tappo_left{
+	float:left;
+	background-image:url(/prize/images/tappo_left.jpg);
+	height:230px;
+	width:24px;
+	
+}
+
+#tappo{
+	float:left;
+	background-image:url(/prize/images/sfondo_tappo.jpg);
+	background-repeat:repeat-x;
+	height:230px;
+	width:952px;
+}
+
+#tappo_right{
+	float:left;
+	background-image:url(/prize/images/tappo_right.jpg);
+	height:230px;
+	width:24px;
+}
+
+#testo_fondo{
+
+	height:30px;
+	width:300px;
+	color:#CCCCCC;
+	
+	margin-right:auto;
+	text-align:left;
+	padding-top:15px;
+	font-weight:bold;
+	margin-left:26px;
+}
+
+#testo_fondo_desc{
+	float:left;
+	width:300px;
+	color:#CCCCCC;
+	text-align:left;
+	margin-left:26px;
+	
+}
+
+
+#testo_fondo_2{
+
+	height:30px;
+	width:300px;
+	color:#CCCCCC;
+	
+	margin-right:auto;
+	text-align:left;
+	padding-top:15px;
+	font-weight:bold;
+	margin-left:74px;
+}
+
+#testo_fondo_desc_2{
+	float:left;
+	width:300px;
+	color:#CCCCCC;
+	text-align:left;
+	margin-left:74px;
+	
+}
+
+#copiright_2{
+	float:right;
+	color:#CCCCCC;
+	text-align:right;
+	margin-right:74px;
+
+}
+
+
+#prize_container{
+	margin-top:0px;
+	width:800px;
+	
+	height:1170px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	
+}
+
+#copiright{
+	float:right;
+	color:#CCCCCC;
+	text-align:right;
+	margin-right:26px;
+
+}
+
+#citazione{
+	font-weight:bold;
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+#logo_prize{
+	width:271px;
+	height:63px;
+	float:left;
+	background-image:url(/prize/images/prize2008.jpg);
+	background-repeat:no-repeat;
+
+}
+
+#poesiola{
+	float:left;
+	width:271px;
+	height:150px;
+	margin-top:93px;
+	font-size:16px;
+	margin-left:3px;
+	font-style:italic;
+
+}
+
+#blocco_testo{
+	float:left;
+	/*width:800px;*/
+	width:800px;
+	height:300px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+	
+
+}
+
+#blocco_testo2{
+	float:left;
+	/*width:800px;*/
+	width:800px;
+	height:50px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+	margin-bottom:40px;
+	
+
+}
+
+#blocco_priestley{
+	float:left;
+	width:800px;
+	height:330px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	
+
+}
+
+#priestley{
+	float:left;
+	width:150px;
+	height:227px;
+	margin-right:30px;
+	background-image:url(/prize/images/priestley.jpg);
+	background-repeat:no-repeat;
+	margin-top:14px;
+}
+
+#bertero{
+	float:left;
+	width:150px;
+	height:266px;
+	margin-right:30px;
+	background-image:url(/prize/images/bertero.jpg);
+	background-repeat:no-repeat;
+	margin-top:14px;
+}
+
+#maraboto{
+	float:left;
+	width:150px;
+	height:266px;
+	margin-right:30px;
+	background-image:url(/prize/images/maraboto.jpg);
+	background-repeat:no-repeat;
+	margin-top:14px;
+}
+
+#maraboto{
+	float:left;
+	width:150px;
+	height:266px;
+	margin-right:30px;
+	background-image:url(/prize/images/maraboto.jpg);
+	background-repeat:no-repeat;
+	margin-top:14px;
+}
+
+#testo_priestley{
+	float:left;
+	width:550px;
+	height:460px;
+	
+}
+
+#data{
+width:200px;
+height:40px;
+float:left;
+font-weight:bold;
+color:#003366;
+
+}
+
+#foto_container{
+float:left;
+width:800px;
+height:170px;
+
+
+
+
+}
+
+#foto{
+	float:left;
+	width:170px;
+	height:170px;
+	border:thin;
+	border-style:solid;
+	border-color:#000000;
+	margin-right:37px;
+}
+
+
+#ultima_foto{
+	float:left;
+	width:170px;
+	height:170px;
+	border:thin;
+	border:thin;
+	border-style:solid;
+	border-color:#000000;
+	
+}
+
+#link_mail{
+color:#003399;
+font-weight:bold;
+text-decoration:none
+
+}
+
+.bertero_link{
+	color:#990000;
+	text-decoration:none;
+}
+
